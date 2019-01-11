@@ -9,3 +9,10 @@ def contain_a(array)
     string.include?("a")
   end
 end
+
+def first_wa(array)
+  arr.detect do |string|
+    string[0,2] == "wa"
+  end
+end
+
