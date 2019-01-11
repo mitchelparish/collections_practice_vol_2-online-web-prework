@@ -9,4 +9,3 @@ def contain_a(array)
     string.include?("a")
   end
 end
-
