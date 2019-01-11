@@ -3,4 +3,3 @@ def begins_with_r(array)
     string[0] == "r"
   end
 end
-
