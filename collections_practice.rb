@@ -22,7 +22,7 @@ def remove_non_strings(array)
   end
 end
 
-def counting_elements(array)
+def count_elements(array)
   array.uniq.each {|i| count = 0
     array.each {|i2| if i2 == i then count += 1 end}
       i[:count] = count}
