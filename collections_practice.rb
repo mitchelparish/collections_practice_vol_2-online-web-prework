@@ -11,8 +11,13 @@ def contain_a(array)
 end
 
 def first_wa(array)
-  arr.detect do |string|
+  array.detect do |string|
     string[0,2] == "wa"
   end
 end
 
+def remove_non_strings(array)
+  array.delete_if do |string|
+    string.is_a?(string) == false
+  end
+end
