@@ -37,3 +37,10 @@ def merge_data(keys, data)
 def find_cool(cool)
   cool.select {|i| i.any? {|k,v| v == "cool"}}
 end
+
+def organize_schools(data)
+  locations = {}
+  data.collect {|k,v| locations[v[:location]] = []}
+  locations.each {|k,v| data.each {|k2,v2| if k == v2[:location]}}
+    then v << k2 end}}
+  end
