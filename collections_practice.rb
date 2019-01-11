@@ -1,1 +1,2 @@
-def begins_with_r(element)
+def begins_with_r(arr)
+end
