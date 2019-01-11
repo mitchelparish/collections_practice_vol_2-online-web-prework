@@ -39,8 +39,7 @@ def find_cool(cool)
 end
 
 def organize_schools(data)
-  locations = {}
-  data.collect {|k,v| locations[v[:location]] = []}
-  locations.each {|k,v| data.each {|k2,v2| if k == v2[:location]}
-    then v << k2 end}
+    locations = {}
+    data.collect {|k,v| locations[v[:location]] = []}
+    locations.each {|k,v| data.each {|k1,v1| if k == v1[:location] then v << k1  end}}
 end
