@@ -28,8 +28,8 @@ def count_elements(array)
       i[:count] = count}
     end
 
-def merge_data(key, value)
-  merge = []
-  keys.each {|i| data.first.map {|k,v| if i.values[0] == k then merge <<
-  i.merge(v) end}}
-end
+def merge_data(keys, data)
+  merged = []
+      keys.each {|i| data.first.map {|k,v| if i.values[0] == k then merged << i.merge(v) end}}
+      merged
+    end
